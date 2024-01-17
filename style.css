@@ -1,0 +1,83 @@
+/* Monsterrat font from Googleapis.com*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Variables*/
+:root {
+    --main-color: #967259;
+    --seconed-color: #dbc1ac;
+    --back-color: #000000;
+    --white-color: #ffffff;
+    --text-color: #dbc1ac;
+    --bg-color: #e6e8f8;
+    --java-blue-color: #77bff2;
+  
+    /* Font -- Monsterrat from googleapis.com */
+    --font-family: 'Montserrat', sans-serif;
+}
+
+/*Base */
+*{
+    font-family: var(--font-family);
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a{
+    all:unset;
+    cursor:pointer;
+}
+
+img{
+    width:100%;
+}
+
+section {
+    padding: 3rem 8rem 2rem;
+}
+
+/*Header*/
+header{
+    display:flex;
+    height:100%;
+    width:100%;
+}
+header *{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.header_title{
+    display:inline-block;
+}
+
+.logo{
+    display:inline-block;
+}
+
+.logo_icon{
+    display:flex;
+    height:150px;
+    width:150px;
+    float:left;
+}
+
+.logo_text{
+    display:flex;
+    align-items:center;
+    font-size:3rem;
+    float:right;
+    vertical-align: middle;
+}
+
+nav{
+    display:flex;
+    width:100%;
+    margin-left:500px;
+}
+
+.navbar_links{
+    display:flex;
+    font-size:1rem;
+    margin-left:25px;
+}
