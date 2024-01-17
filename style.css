@@ -1,21 +1,22 @@
 /* Monsterrat font from Googleapis.com*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
 
 /* Variables*/
 :root {
-    --main-color: #e3a274;
+    --main-color: #a06235;
     --seconed-color: #dbc1ac;
-    --back-color: #000000;
+    --black-color: #000000;
     --white-color: #ffffff;
     --text-color: #0d0d0d;
+    --background-color: #f3f3f3;
     /*I will change color later*/
     --highlight-color: #873611;
-    --heading-font-size:2rem;
-    --normal-font-size: 1.2rem;
+    --heading-font-size:3rem;
+    --heading-font-size-2:2rem;
+    --normal-font-size: 1.5rem;
   
     /* Font -- Monsterrat from googleapis.com */
-    --font-family: 'Times New Roman', Times, serif;
+    --font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
 /*Base */
@@ -41,7 +42,7 @@ section {
 
 /*temp*/
 body{
-    background-color:gray;
+    background-color:var(--background-color);
 }
 
 /*Header*/

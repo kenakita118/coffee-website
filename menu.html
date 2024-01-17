@@ -16,17 +16,44 @@
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
+            gap:25px;
         }
 
         .menu_container_item{
-            display:flex;
+            display:flexbox;
             align-items:center;
             justify-content: center;
         }
 
+        .menu_container_text{
+            text-align:center;
+            align-items:center;
+            color:var(--black-color);
+        }
+
+        .menu_container_text h2{
+            font-size:var(--heading-font-size-2);
+        }
+
+        .menu_container_text p,
+        .menu_container_text a
+        {
+            font-size:var(--normal-font-size);
+        }
+
+        .menu_container_text .menu_container_buyButton{
+            display:flex;
+            color:var(--white-color);
+            padding:10px;
+            background-color:var(--main-color);
+            justify-content:center;
+            text-align:center;
+            width:60%;
+            margin:auto;
+        }
+
         .menu_container_item img{
-            width:250px;
-            height:250px;
+            width:100%;
             object-fit: cover;
             aspect-ratio: 1 / 1;
         }
@@ -47,7 +74,7 @@
         <nav>
             <a href="index.html" class="navbar_links">Home</a>
             <!--Links below don't work yet.-->
-            <a href="menu.html" class="navbar_links">Menu</a>
+            <a href="#menu" class="navbar_links">Menu</a>
             <a href="course.html" class="navbar_links">Course</a>
             <a href="reviews.html" class="navbar_links">Reviews</a>
             <a href="about.html" class="navbar_links">About</a>
@@ -56,14 +83,62 @@
     </header>
     <!--End of header-->
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="menu_container">
             <div class="menu_container_item">
                 <img src="images/menuItem1.png" alt="o">
+                <div class="menu_container_text">
+                    <h2 class="menu_container_heading">Coffee 1</h2>
+                    <p class="menu_container_description">This coffee is  good!</p>
+                    <a class="menu_container_buyButton">Add to cart</a>
+                </div>
             </div>
+
             <div class="menu_container_item">
                 <img src="images/menuItem2.jpeg" alt="o">
+                <div class="menu_container_text">
+                    <h2 class="menu_container_heading">Coffee 2</h2>
+                    <p class="menu_container_description">This coffee is  good too!</p>
+                    <a class="menu_container_buyButton">Add to cart</a>
+                </div>
             </div>
+
+            <div class="menu_container_item">
+                <img src="images/menuItem3.jpeg" alt="o">
+                <div class="menu_container_text">
+                    <h2 class="menu_container_heading">Coffee 3</h2>
+                    <p class="menu_container_description">This coffee is  good too!</p>
+                    <a class="menu_container_buyButton">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="menu_container_item">
+                <img src="images/menuItem4.jpeg" alt="o">
+                <div class="menu_container_text">
+                    <h2 class="menu_container_heading">Coffee 4</h2>
+                    <p class="menu_container_description">This coffee is  good too!</p>
+                    <a class="menu_container_buyButton">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="menu_container_item">
+                <img src="images/menuItem5.jpeg" alt="o">
+                <div class="menu_container_text">
+                    <h2 class="menu_container_heading">Coffee 5</h2>
+                    <p class="menu_container_description">This coffee is  good too!</p>
+                    <a class="menu_container_buyButton">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="menu_container_item">
+                <img src="images/menuItem6.jpeg" alt="o">
+                <div class="menu_container_text">
+                    <h2 class="menu_container_heading">Coffee 6</h2>
+                    <p class="menu_container_description">This coffee is  good too!</p>
+                    <a class="menu_container_buyButton">Add to cart</a>
+                </div>
+            </div>
+            
         </div>
     </section>
 
