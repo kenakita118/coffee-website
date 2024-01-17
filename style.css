@@ -1,18 +1,21 @@
 /* Monsterrat font from Googleapis.com*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
 /* Variables*/
 :root {
-    --main-color: #967259;
+    --main-color: #e3a274;
     --seconed-color: #dbc1ac;
     --back-color: #000000;
     --white-color: #ffffff;
-    --text-color: #dbc1ac;
-    --bg-color: #e6e8f8;
-    --java-blue-color: #77bff2;
+    --text-color: #0d0d0d;
+    /*I will change color later*/
+    --highlight-color: #873611;
+    --heading-font-size:2rem;
+    --normal-font-size: 1.2rem;
   
     /* Font -- Monsterrat from googleapis.com */
-    --font-family: 'Montserrat', sans-serif;
+    --font-family: 'Times New Roman', Times, serif;
 }
 
 /*Base */
@@ -36,22 +39,26 @@ section {
     padding: 3rem 8rem 2rem;
 }
 
+/*temp*/
+body{
+    background-color:gray;
+}
+
 /*Header*/
 header{
     display:flex;
     height:100%;
     width:100%;
+    background-color:var(--white-color);
 }
+
 header *{
     display:flex;
     justify-content:center;
     align-items:center;
 }
-.header_title{
-    display:inline-block;
-}
 
-.logo{
+.logo {
     display:inline-block;
 }
 
@@ -65,19 +72,27 @@ header *{
 .logo_text{
     display:flex;
     align-items:center;
-    font-size:3rem;
+    font-size:var(--heading-font-size);
     float:right;
     vertical-align: middle;
 }
 
+
+/* Navbar links */
 nav{
     display:flex;
     width:100%;
-    margin-left:500px;
+    margin-left:45%;
 }
 
 .navbar_links{
     display:flex;
-    font-size:1rem;
+    font-size:var(--normal-font-size);
     margin-left:25px;
 }
+
+.navbar_links:hover{
+    color:var(--highlight-color);
+    border-bottom: 1px solid var(--highlight-color);
+}
+/* End of navbar*/
