@@ -7,6 +7,29 @@
 
     <!--Global Stylesheet For Header and Footer-->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .home{
+            background-image: url(images/coffee_background_image.png);
+            width:100%;
+            height:800px;
+            object-fit:cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size:cover;
+        }
+        .home_textGroup{
+            display:flex;
+            justify-content:center;
+            text-align:left;
+            color:var(--white-color);
+        }
+        .home_textGroup_title{
+            font-size:var(--large-font-size);
+        }
+        .home_textGroup_text{
+            font-size:var(--normal-font-size);
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +43,7 @@
         </div>
         <!--Navbar and links-->
         <nav>
-            <a href="index.html" class="navbar_links">Home</a>
+            <a href="#home" class="navbar_links">Home</a>
             <!--Links below don't work yet.-->
             <a href="menu.html" class="navbar_links">Menu</a>
             <a href="course.html" class="navbar_links">Course</a>
@@ -31,6 +54,14 @@
     </header>
     <!--End of header-->
 
+    <!--Start of home / content in the middle of page-->
+    <section class="home" id="home">
+        <div class="home_textGroup">
+            <h1 class="home_textGroup_title">If there is a bee</h1>
+            <p class="home_textGroup_text">You do not flee</p>
+        </div>
+        
+    </section>
 
     <footer>
         
