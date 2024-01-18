@@ -51,6 +51,7 @@ header{
     height:100%;
     width:100%;
     background-color:var(--white-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header *{
@@ -83,7 +84,8 @@ header *{
 nav{
     display:flex;
     width:100%;
-    margin-left:45%;
+    justify-content:right;
+    margin-right:1%;
 }
 
 .navbar_links{
@@ -93,6 +95,7 @@ nav{
 }
 
 .navbar_links:hover{
+    display:inline-flex;
     color:var(--highlight-color);
     border-bottom: 1px solid var(--highlight-color);
 }
